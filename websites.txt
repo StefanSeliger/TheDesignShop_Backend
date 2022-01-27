@@ -1,5 +1,0 @@
-Seite, die ich benutzt habe um auf die Datenbank auf MongoDB zuzugreifen und die Daten aufzurufen. 
--> https://www.mongodb.com/languages/express-mongodb-rest-api-tutorial
-
-Was wurde alles installiert: 
-npm i ejs formidable express dotenv mongodb 
