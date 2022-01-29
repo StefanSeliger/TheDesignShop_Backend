@@ -1,0 +1,20 @@
+<section class="productOverview">
+    <% productArray.forEach(elt=> { %>
+        <a href="<%- elt.LinkShop %>">
+            <img src="<%- elt.ProductLink %>" alt="<%- elt.ProductName %>">
+            <article>
+                    <div>
+                        <h3>
+                            <%- elt.ProductName %>
+                        </h3>
+                        <p>
+                            <%- elt.Company %>
+                        </p>
+                    </div>
+                    <h3>
+                        <%- elt.Price %> $
+                    </h3>
+            </article>
+        </a>
+        <% }) %>
+</section>

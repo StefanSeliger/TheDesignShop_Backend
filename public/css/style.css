@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header, main, footer {
+  padding: 3vh 5vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: grey;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.headerNav .navLinks a {
+  margin-left: 3vw;
+}
+
+.productOverview, .randomProducts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.productOverview img, .randomProducts img {
+  width: 100%;
+}
+.productOverview article, .randomProducts article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px 0;
+}
+.productOverview article p, .randomProducts article p {
+  color: grey;
+}
+
+.productOverview a:nth-of-type(7n+1) {
+  grid-column: 1/4;
+}
+
+.addProductForm {
+  text-align: center;
+  margin: 3vh 0 8vh 0;
+}
+.addProductForm div {
+  border-top: 3px solid black;
+  width: 150px;
+  margin: 0 auto;
+}
+.addProductForm form {
+  margin: 8vh 0;
+}
+.addProductForm form input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin: 2vh 0;
+  border: none;
+  background-color: #E5E5E5;
+  border-radius: 5px;
+}
+.addProductForm form #addProductButton {
+  color: white;
+  font-weight: bold;
+  background-color: #323A45;
+}
+.addProductForm form #addProductButton:hover {
+  background-color: #E5E5E5;
+  color: black;
+}
+
+.randomProductsSection {
+  border-top: 1px solid black;
+}
+.randomProductsSection h2 {
+  margin: 15vh 0 5vh 0;
+}
+
+footer {
+  text-align: center;
+}
+footer article a {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+@media screen and (max-width: 414px) {
+  .headerNav {
+    text-align: center;
+    display: block;
+  }
+  .headerNav h1 {
+    font-size: 2.2rem;
+  }
+  .headerNav .navLinks a {
+    display: block;
+    margin: 7px 0;
+  }
+
+  .productOverview, .randomProducts {
+    display: block;
+    font-size: 0.8rem;
+  }
+  .productOverview article, .randomProducts article {
+    margin-bottom: 5vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
