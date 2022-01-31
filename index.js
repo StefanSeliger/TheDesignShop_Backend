@@ -83,4 +83,4 @@ app.use((_, res) => {
     res.render("pages/notFound")
 })
 
-app.listen(PORT, () => console.log('listening on port ' + PORT))
+app.listen(process.env.PORT || 5000, () => console.log('listening on port ' + process.env.PORT))
